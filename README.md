@@ -68,3 +68,5 @@ If you encounter further issues, consider using `Invoke-WebRequest`:
 ```powershell
 Invoke-WebRequest 'https://airflow.apache.org/docs/apache-airflow/3.0.1/docker-compose.yaml' -OutFile 'docker-compose.yaml'
 ```
+
+#### Step 2: Start all services by executing **docker compose up -d** 

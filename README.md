@@ -2,7 +2,7 @@
 
 For official documentation, refer to the [Apache Airflow Docker Compose Setup Guide](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html).
 
-### Step 1: Download `docker-compose.yaml`
+## Step 1: Download `docker-compose.yaml`
 
 To deploy Airflow on Docker Compose, you need to fetch the official `docker-compose.yaml` file.
 
@@ -69,9 +69,9 @@ If you encounter further issues, consider using `Invoke-WebRequest`:
 Invoke-WebRequest 'https://airflow.apache.org/docs/apache-airflow/3.0.1/docker-compose.yaml' -OutFile 'docker-compose.yaml'
 ```
 
-### Step 2: Start all services by executing **docker compose up -d** 
+## Step 2: Start all services by executing **docker compose up -d** 
 
-### Step 3: Install dependencies as images using Dockerfile
+## Step 3: Install dependencies as images using Dockerfile
 This will build image for application custom dependencies. In this repository, it is required to build custom dependency for apache-airflow package to import DAG and other modules for executing PythonOperator task.
 
 Create requirements.txt file and add custom dependencies with required version. Utilize the file in Dockerfile for pip install

@@ -70,3 +70,8 @@ Invoke-WebRequest 'https://airflow.apache.org/docs/apache-airflow/3.0.1/docker-c
 ```
 
 #### Step 2: Start all services by executing **docker compose up -d** 
+
+#### Step 3: Install dependencies as images using Dockerfile
+This will build image for application custom dependencies. In this repository, it is required to build custom dependency for apache-airflow package to import DAG and other modules for executing PythonOperator task.
+
+Create requirements.txt file and add custom dependencies with required version. Utilize the file in Dockerfile for pip install

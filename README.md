@@ -23,9 +23,9 @@ curl.exe -LfO 'https://airflow.apache.org/docs/apache-airflow/3.0.1/docker-compo
 
 ---
 
-## Troubleshooting Common Errors:
+## Common Issues:
 
-### **Error 1:**
+### **Issue 1:**
 
 ```plaintext
 Invoke-WebRequest : A parameter cannot be found that matches parameter name 'LfO'.
@@ -45,7 +45,7 @@ curl.exe -LfO 'https://airflow.apache.org/docs/apache-airflow/3.0.1/docker-compo
 
 ---
 
-### **Error 2:**
+### **Issue 2:**
 
 ```plaintext
 curl: (35) schannel: next InitializeSecurityContext failed: CRYPT_E_NO_REVOCATION_CHECK (0x80092012) - The revocation function was unable to check revocation for the certificate.
